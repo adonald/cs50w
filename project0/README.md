@@ -19,9 +19,15 @@ Alright, now it’s time to make your website your own. Design a personal webpag
 - Your website must have at least one stylesheet file.
   - styles.css
 - Your stylesheet(s) must use at least five different CSS properties, and at least five different types of CSS selectors. You must use the #id selector at least once, and the .class selector at least once.
+  - ### to do ###
 - Your stylesheet(s) must include at least one mobile-responsive @media query, such that something about the styling changes for smaller screens.
+  - ### to do ###
 - You must use Bootstrap 4 on your website, taking advantage of at least one Bootstrap component, and using at least two Bootstrap columns for layout purposes using Bootstrap’s grid model.
+  - component = cards for motorbike images
+  - columns = on individual motorbike pages - to wrap cards
 - Your stylesheets must use at least one SCSS variable, at least one example of SCSS nesting, and at least one use of SCSS inheritance.
+  - ### to do ###
 - In README.md, include a short writeup describing your project, what’s contained in each file, and (optionally) any other additional information the staff should know about your project.
+  - ### to do ###
 
 Note that not all of the above requirements are covered in Lecture 0, some will be introduced in Lecture 1.
