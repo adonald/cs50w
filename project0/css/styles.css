@@ -1,7 +1,3 @@
-body {
-	color: #ccc;
-}
-
 /*
  * Globals
  */
@@ -23,19 +19,24 @@ a:hover {
   border: .05rem solid #fff;
 }
 
+/* Show it is fixed to the top */
+body .fixed-nav {
+	min-height: 75rem;
+	padding-top: 4.5rem;
+  }
 
 /*
  * Base structure
  */
 
-html,
-body {
+html .frontpage,
+body .frontpage {
   height: 100%;
   background-color: #333;
   background: url("../img/bike.jpg") no-repeat scroll 0px 100% / cover transparent;
 }
 
-body {
+body .frontpage {
   display: -ms-flexbox;
   display: flex;
   color: #fff;
