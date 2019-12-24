@@ -8,13 +8,14 @@ Alright, now it’s time to make your website your own. Design a personal webpag
 
 - Your website must contain at least four different .html pages, and it should be possible to get from any page on your website to any other page by following one or more hyperlinks.
   - 4 pages =
-    - 1
-    - 2
-    - 3
-    - 4
+    - 1 - Cover page
+    - 2 - List of motorbikes
+    - 3 - Van Van
+    - 4 - Bandit
 - Your website must include at least one list (ordered or unordered), at least one table, and at least one image.
   - unordered list = naviagtion links
   - table = list of motorbikes I have owned, with details
+  - image(s) = cover page (css background), individual motorbike pages
 - Your website must have at least one stylesheet file.
   - styles.css
 - Your stylesheet(s) must use at least five different CSS properties, and at least five different types of CSS selectors. You must use the #id selector at least once, and the .class selector at least once.
