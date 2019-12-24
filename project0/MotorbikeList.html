@@ -48,51 +48,64 @@
 		<div class="collapse navbar-collapse" id="navbarCollapse">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Link</a>
+					<a class="nav-link" href="./MotorbikeList.html">Motorbikes</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					<a class="nav-link" href="./MotorbikeVanVan.html">Van Van</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./MotorbikeBandit.html">Bandit</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
-	<main>
-		<p>This is the body of the website.</p>
+	<main class="container">
 		<section>
 			<h2>Motorbikes I have owned</h2>
-			<table>
-				<tr>
-					<th>Marquee</th>
-					<th>Model</th>
-					<th>Category</th>
-					<th>Engine Size</th>
-					<th>Colour</th>
-					<th>Dates</th>
-				</tr>
-				<tr>
-					<td>Suzuki</td>
-					<td>RV125 Van Van</td>
-					<td>Scarmbler</td>
-					<td>125cc</td>
-					<td>Brown/Grey</td>
-					<td>2015-2017</td>
-				</tr>
-				<tr>
-					<td>Suzuki</td>
-					<td>GSF650 Bandit</td>
-					<td>Sports Tourer</td>
-					<td>650cc</td>
-					<td>Metallic Blue</td>
-					<td>2017-present</td>
-				</tr>
+			<table class="table table-hover">
+				<caption>List of motorbikes</caption>
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">Marque</th>
+						<th scope="col">Model</th>
+						<th scope="col">Category</th>
+						<th scope="col">Engine Size (cc)</th>
+						<th scope="col">Colour</th>
+						<th scope="col">Dates</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Suzuki</td>
+						<td><a href="./MotorbikeVanVan.html">RV125 Van Van</a></td>
+						<td>Scrambler</td>
+						<td>125</td>
+						<td>Brown/Grey</td>
+						<td>2015-2017</td>
+					</tr>
+					<tr>
+						<td>Suzuki</td>
+						<td><a href="./MotorbikeBandit.html">GSF650 Bandit</a></td>
+						<td>Sports Tourer</td>
+						<td>650</td>
+						<td>Metallic Blue</td>
+						<td>2017-present</td>
+					</tr>
+				</tbody>
 			</table>
 		</section>
 	</main>
 	<footer>
 		&copy; Alex Donald.
 	</footer>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
