@@ -58,15 +58,136 @@
 			</ul>
 		</div>
 	</nav>
-	<main class="container">
-		<section>
-            <h2>Information</h2>
-            <p>A page to put some information about me and my motorbikes.</p>
+	<main>
+		<section class="container">
+            <h2>CSS Playground</h2>
+            <p>A partial copy of the HTML from my personal site to use as practice for CSS styling purposes.</p>
 		</section>
+		
+		<div id="projects">
+			<div class="container">
+				<h2>Projects</h2>
+				<div class="row">
+					<div class="card-asd">
+						<div class="card-content">
+							<h3>Tutti Frutti Clothing</h3>
+							<p>This is an online shop I created for a friend who sews her own range of
+								children's clothes.</p>
+							<p>The shop runs on the open source e-commerce software OpenCart, and the design
+								is a simple customisation of one of the standard templates. I have also added
+								Instagram integration, and some custom shipping cost modules.</p>
+							<p>
+								<a href="http://www.tuttifrutticlothing.com">Website</a>
+							</p>
+						</div>
+					</div>
+					
+					<div class="card-asd">
+						<div class="card-content">
+							<h3>The Game Tutor</h3>
+							<p>This is a website I developed for The Game Tutor. He did the design work, and I
+								coded the HTML and CSS. Then I implemented a CMS for him using Drupal as a back-end.</p>
+							<p>
+								<a href="http://www.thegametutor.co.uk">Website</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="card-asd-special">
+						<div class="card-content">
+							<h3>Pantone Converter</h3>
+							<p>This project creates a reference page for Pantone colours. Each entry has the
+								Pantone number; the approximate RGB, CMYK, and Hex values of the colour; and a
+								colour swatch.</p>
+							<p>
+								<a href="https://github.com/adonald/Pantone-CMYK-RGB-Hex">GitHub repo</a>
+							</p>
+						</div>
+					</div>
+					
+					<div class="card-asd">
+						<div class="card-content">
+							<h3>Photostream Grid</h3>
+							<p>Photostream Grid is a simple php application to display photos from
+								your Flickr photostream in a grid on your own website.</p>
+							<p>
+								<a href="https://www.alidonald.co.uk">Website</a> | <a
+									href="https://github.com/adonald/photostreamGrid">GitHub repo</a>
+							</p>
+						</div>
+					</div>
+					
+					<div class="card-asd">
+						<div class="card-content">
+							<h3>Printable Calendar</h3>
+							<p>A dynamically generated yearly/monthly calendar for screen or print. Select your
+								desired year or month.</p>
+							<p>Bank holiday data is drawn from the gov.uk website, but can be changed to use
+								any json source.</p>
+							<p>
+								<a href="https://github.com/adonald/YearCalendar">GitHub repo</a>
+							</p>
+						</div>
+					</div>
+					
+					<div class="card-asd">
+						<div class="card-content">
+							<h3>Super 11</h3>
+							<p>This is a microsite I developed for the launch of a new board game called
+								Super 11.</p>
+							<p>It uses the artwork from the box design, an embedded YouTube video, and an AJAX
+								contact form with a PHP back end.</p>
+							<p>This temporary site has now been updated with the full verson (that I didn't design).</p>
+							<p>
+								<a href="http://www.super11.co.uk">Website</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="about">
+			<div class="container">
+				<h2>About Me</h2>
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<p>Welcome to my little website. Here I am slowly compiling a collection of projects I have created.
+							Some fix problems I have encountered, others I just enjoyed coding! I am currently studying for a
+							BSc in "Computing and IT with Applied Mathematics" at the Open University, so hopefully these
+							projects will get more complex as my learning continues.</p>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<p>My day job consists of working on the project delivery team for a company that creates recipe
+							software. It is a small company, so I get a chance to get my teeth into a variety of projects on top
+							of my core role. In my spare time, I create websites for friends, administer a couple of Linux
+							servers, and generally tinker about with computers. The rest of my time I spend either riding my
+							motorbike, raising money for local causes with the Round Table, or looking after my young, growing
+							family :-)</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
-	<footer class="footer mt-auto py-3">
+	<footer id="page-footer">
 		<div class="container">
-		  <span class="text-muted">&copy; <a href="https://www.alexdonald.co.uk">Alex Donald</a>.</span>
+			<div class="row">
+				<div class="col-lg-8 col-sm-12">
+					<h5>Alex Donald</h5>
+					<p>This is a simple website I have created using a static site generator called <a href="http://wok.mythmon.com/" class="grey-text text-lighten-4">wok</a>. It is hosted on <a href="https://www.digitalocean.com/?refcode=84c093049579">DigitalOcean</a>, running <a href="http://www.debian.org/">Debian</a> and <a href="http://nginx.org/">NGINX</a>.</p>
+				</div>
+				<div class="col-lg-4 col-sm-12">
+					<h5>Links</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="/">Home</a></li>
+						<li><a class="grey-text text-lighten-3" href="#projects">Projects</a></li>
+						<li><a class="grey-text text-lighten-3" href="#about">About Me</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer-copyright" class="container">
+			&copy; <a href="https://www.alexdonald.co.uk" alt="Alex Donald">Alex Donald</a> 2017. <a href="https://www.alexdonald.co.uk/pgp.txt" alt="Alex Donald's PGP key">PGP Key</a>
 		</div>
 	</footer>
 	<!-- Optional JavaScript -->

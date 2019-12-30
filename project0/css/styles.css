@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/*
+1x id = #about
+1x class = .card-asd (named with -asd suffix to avoid clash with bootstrap)
+5x selectors =
+ 1. html, body = both html and body
+ 2. main > .container = container as direct child of main
+ 3. .asd-card:nth-child(2n) = every other asd-card
+ 4. a:hover = links being hovered over
+ 5. a::after = to add content after each link
+1x @media = card sizes change to show more in a row on larger screens
+
+1x scss variable = card/section background colours
+1x scss nesting = card link attributes
+1x scss inheritance = special card background and header stars
+*/
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+main > .container {
+  padding: 60px 15px 0;
+}
+
+.card-asd, .card-asd-special {
+  margin: 10px;
+  border: 1px solid black;
+  padding: 20px;
+}
+.card-asd a, .card-asd-special a, .card-asd a:visited {
+  text-decoration: none;
+  color: #6601c5;
+}
+.card-asd a:hover, .card-asd-special a:hover {
+  text-decoration: underline;
+}
+.card-asd a::after, .card-asd-special a::after {
+  content: " 🔗";
+}
+
+.card-asd:nth-child(2n), .card-asd-special:nth-child(2n) {
+  background-color: #fffc57;
+}
+
+.card-asd-special {
+  background-color: lime;
+}
+.card-asd-special h3::before, .card-asd-special h3::after {
+  content: " ★";
+}
+
+#about {
+  background-color: lightskyblue;
+  margin: 10px 0 20px 0;
+  padding: 10px 0;
+}
+
+@media (min-width: 768px) {
+  .card-asd, .card-asd-special {
+    width: 45%;
+  }
+}
+@media (min-width: 992px) {
+  .card-asd, .card-asd-special {
+    width: 30%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

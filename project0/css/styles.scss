@@ -1,16 +1,27 @@
----
----
-
 /*
-1x id
-1x class
-5x selectors
-1x @media
+1x id = #about
+1x class = .card-asd (named with -asd suffix to avoid clash with bootstrap)
+5x selectors =
+ 1. html, body = both html and body
+ 2. main > .container = container as direct child of main
+ 3. .asd-card:nth-child(2n) = every other asd-card
+ 4. a:hover = links being hovered over
+ 5. a::after = to add content after each link
+1x @media = card sizes change to show more in a row on larger screens
 
-1x scss variable
-1x scss nesting
-1x scss inheritance
+1x scss variable = card/section background colours
+1x scss nesting = card link attributes
+1x scss inheritance = special card background and header stars
 */
+
+$section-bg-1: lightskyblue;
+$card-bg-1: #fffc57;
+$link-color: #6601c5;
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
 
 body {
 	min-height: 75rem;
@@ -19,4 +30,54 @@ body {
 
 main > .container {
 	padding: 60px 15px 0;
+}
+
+.card-asd {
+	margin: 10px;
+	border: 1px solid black;
+	padding: 20px;
+	
+	a, a:visited {
+		text-decoration: none;
+		color: $link-color;
+	}
+	
+	a:hover {
+		text-decoration: underline;
+	}
+	
+	a::after {
+		content: " \1f517";
+	}
+}
+
+.card-asd:nth-child(2n) {
+	background-color: $card-bg-1;
+}
+
+.card-asd-special {
+	@extend .card-asd;
+	background-color: lime;
+
+	h3::before, h3::after {
+		content: " \2605 "
+	}
+}
+
+#about {
+	background-color: $section-bg-1;
+	margin: 10px 0 20px 0;
+	padding: 10px 0;
+}
+
+@media (min-width: 768px) {
+	.card-asd, .card-asd-special {
+		width: 45%;
+	}
+}
+
+@media (min-width: 992px) {
+	.card-asd, .card-asd-special {
+		width: 30%;
+	}
 }
